@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <title>Caller</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/js/peer.js"></script>
+</head>
+
+<body>
+
+  <div class="videoContainer" id="videoContainer">
+    <video class="video" id="remoteVideo" autoplay></video>
+    <video class="video" id="localVideo" muted="true" autoplay></video>
+    <button id="swapCameraButton">Swap</button>
+  </div>
+
+  <script type="text/javascript">
+    window.clientType = 'Caller';
+  </script>
+
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>
